@@ -1,5 +1,4 @@
 void main() async {
-  int myAge = 99999999999999999;
   String laugh = String.fromCharCode(128514);
   print(laugh);
 }
