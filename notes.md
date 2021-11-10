@@ -9,3 +9,14 @@
 7. Numbers Representation Converter Decimal, Binary, Octal, HexaDecimal
 8. English to Persian Translator,
 9. Pig Latin Game
+10. Sorting a List of numbers
+11. Sorting Alphabet
+12. Creating a chatbot
+
+
+# Projects Ideas: 
+1. Text Compressor
+2. Image/Video Compressor
+3. Password of Message Encyption
+
+
