@@ -1,17 +1,19 @@
-#Projects that we will create throughout the course: 
+# Projects that we will create throughout the course: 
 
-1. Simple Calculator
-2. Numbers Guessing Game
-3. End to End Encryption Messeging App
-4. Weight, Distance and Temperature Converter
-5. Creating a Stopwatch
-6. Creating a TODO application
-7. Numbers Representation Converter Decimal, Binary, Octal, HexaDecimal
-8. English to Persian Translator,
-9. Pig Latin Game
-10. Sorting a List of numbers
-11. Sorting Alphabet
-12. Creating a chatbot
+1. School Grading System Application
+2. Simple Calculator which can do arithmetic Operator
+3. Numbers Guessing Game
+4. Multiplication Table Game
+5. End to End Encryption Messeging App
+6. Weight, Distance and Temperature Converter
+7. Creating a Stopwatch
+8. Creating a TODO application
+9. Numbers Representation Converter Decimal, Binary, Octal, HexaDecimal
+10. English to Persian Translator,
+11. Pig Latin Game
+12. Sorting a List of numbers
+13. Sorting Alphabet
+14. Creating a chatbot
 
 
 # Projects Ideas: 
