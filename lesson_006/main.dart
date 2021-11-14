@@ -1,10 +1,6 @@
 import 'dart:io';
 
 void main() {
-  // Name:
-  stdout.write('Please Enter your name: ');
-  String? nameInput = stdin.readLineSync();
-
 // Score:
   stdout.write('Enter your score: ');
   double scoreInput = double.tryParse("${stdin.readLineSync()}") ?? 0;
