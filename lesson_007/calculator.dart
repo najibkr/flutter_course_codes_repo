@@ -1,9 +1,9 @@
-import 'packages/input_parser.dart';
+import 'get_user_input.dart';
 
 void main() {
-  double firstNumber = getDoubleInput('Enter the fist number');
-  String? sign = getStringInput('Enter arithmatic sign');
-  double secondNumber = getDoubleInput('Enter the second number');
+  double firstNumber = getUserInput<double>('Enter the fist number');
+  String sign = getUserInput<String>('Enter arithmatic sign');
+  double secondNumber = getUserInput<double>('Enter the second number');
   late double result;
   if (sign == '+') {
     result = firstNumber + secondNumber;

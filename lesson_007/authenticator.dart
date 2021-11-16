@@ -1,4 +1,4 @@
-import 'packages/input_parser.dart';
+import 'get_user_input.dart';
 
 String? userName;
 String? userEmail;
@@ -11,20 +11,21 @@ void main() {
   ''');
   bool isProgrammRunning = true;
   while (isProgrammRunning) {
-    String? command = getStringInput('Enter a command (signup, signin, exit)');
+    String? command =
+        getUserInput<String>('Enter a command (signup, signin, exit)');
     if (command == 'exit') {
       isProgrammRunning = !isProgrammRunning;
     } else if (command == 'signup') {
-      userName = getStringInput('Enter your name');
-      userEmail = getStringInput('Enter your email');
-      userPass = getStringInput('Enter your password');
+      userName = getUserInput<String>('Enter your name');
+      userEmail = getUserInput<String>('Enter your email');
+      userPass = getUserInput<String>('Enter your password');
       print('Successfully created account: for $userName');
     } else if (command == 'signin') {
       if (userName == null) {
         print("YOur must signup before signing in");
       } else {
-        String? inputEmail = getStringInput('Enter your email');
-        String? inputPass = getStringInput('Enter your password');
+        String inputEmail = getUserInput<String>('Enter your email');
+        String inputPass = getUserInput<String>('Enter your password');
         if (inputEmail == userEmail && inputPass == userPass) {
           print('Wecome:$userName $userEmail $userPass');
         } else {

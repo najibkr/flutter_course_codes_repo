@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/neo/Archive/Personal/Software/Production/Dart/flutter_course'
+make: Leaving directory '/home/neo/Archive/Personal/Software/Production/Dart/flutter_course'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 

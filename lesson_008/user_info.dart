@@ -1,4 +1,4 @@
-import 'packages/input_parser.dart';
+import '../lesson_007/get_user_input.dart';
 
 void main(List<String> args) {
   // Name

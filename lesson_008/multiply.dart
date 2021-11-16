@@ -1,12 +1,15 @@
+import '../lesson_007/get_user_input.dart';
+
 void main() {
-  for (int number = 1; number <= 100; number++) {
+  int numberInput = getUserInput('Enter a number');
+  for (int number = 1; number <= numberInput; number++) {
     print('''
 
 ---------------------------------
 Multiplication Table for $number;
 ----------------------------------
       ''');
-    for (int multiplier = 1; multiplier <= 100; multiplier++) {
+    for (int multiplier = 1; multiplier <= numberInput; multiplier++) {
       print('$number * $multiplier = ${number * multiplier}');
     }
   }
