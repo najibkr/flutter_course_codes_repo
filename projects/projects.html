@@ -38,36 +38,17 @@
     <body class="vscode-body vscode-light">
         <style type="text/css">
   body{
-  font-size: 15pt;
-  /* background-color: #fff;
-  color: #000; */
+  font-size: 14pt;
   line-height: 1.4;
 }
 h1 {
    color: #00b050;
-}
-pre:not(.hljs), pre.hljs code > div {
-    padding: 16px;
-    border-radius: 10px;
-    overflow: auto;
-    /* background-color: #000; */
-}
-code {
-  color: #00b050;
-}
-.hljs-subst, .hljs-function, .hljs-title, .hljs-params, .hljs-formula {
-    color: #45b6fe;
-}
-.vscode-light .hljs-built_in {
-  color: #00b050;
 }
 </style>
 <p><img src="file:////home/neo/Archive/Personal/Software/Production/Dart/flutter_course/projects/coverphoto.jpg" alt="Laams Cover Photo"></p>
 <h1 id="tabel-of-contents">Tabel of Contents</h1>
 <ul>
 <li><a href="#tabel-of-contents">Tabel of Contents</a></li>
-<li><a href="#cli-apps-to-be-developed">CLI Apps to Be Developed:</a></li>
-<li><a href="#app-ideas">App Ideas:</a></li>
 <li><a href="#project-0001-welcome-user-app"><strong>Project 0001: Welcome User App</strong></a>
 <ul>
 <li><a href="#package-name-welcomedart"><em>Package Name:</em> welcome.dart</a></li>
@@ -143,6 +124,7 @@ code {
 <li><a href="#package-name-finderdart"><em>Package Name:</em> finder.dart</a></li>
 <li><a href="#description-8">Description:</a></li>
 <li><a href="#steps-7">Steps:</a></li>
+<li><a href="#solution-9">Solution:</a></li>
 </ul>
 </li>
 <li><a href="#project-0011-products-catalogue-app"><strong>Project 0011: Products Catalogue App</strong></a>
@@ -150,51 +132,16 @@ code {
 <li><a href="#package-name-productsdart">*Package Name: products.dart</a></li>
 <li><a href="#description-9">Description:</a></li>
 <li><a href="#steps-8">Steps:</a></li>
-<li><a href="#solution-9">Solution:</a></li>
+<li><a href="#solution-10">Solution:</a></li>
 </ul>
 </li>
 </ul>
 <p><br>
  
 <br>
+ 
+<br>
  </p>
-<h1 id="cli-apps-to-be-developed">CLI Apps to Be Developed:</h1>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0001: Welcome User App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0002: Student Ranking App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0003: Get User Input Function</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0004: Simple Calculator App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0005: User Authentication App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0006: Average Finder App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0007: User Info Displayer App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> <strong>Project 0008: Multiplication Table App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Project 0009: Guessing Game</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Project 0010: Find and Replace App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Project 0011: Products Catalogue App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Project 0012: End to End Encyption Messaging App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Weight, Distance and Temperature Converter</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Creating a Stopwatch</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Creating a TODO application</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Numbers Representation Converter Decimal, Binary, Octal, HexaDecimal</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> English to Persian Translator,</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Pig Latin Game</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Sorting a List of numbers</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Sorting Alphabet</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Creating a chatbot
-<br>
- 
-<br>
- </li>
-</ul>
-<h1 id="app-ideas">App Ideas:</h1>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Text Compersion App</strong></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <strong>Image Compression App</strong>
-<br>
- 
-<br>
- </li>
-</ul>
 <h1 id="project-0001-welcome-user-app"><strong>Project 0001: Welcome User App</strong></h1>
 <h3 id="package-name-welcomedart"><em>Package Name:</em> <a href="../lesson_001/welcome.dart">welcome.dart</a></h3>
 <h2 id="description">Description:</h2>
@@ -564,17 +511,60 @@ level chosen, repectively. Here is step by step explanation.</p>
 <li>Loop until the user make a level input!</li>
 <li>Store the user input in a variable named <code>chosenLevel</code> of type <code>String</code>!</li>
 <li>Display the <code>chosenLevel</code> to the user!</li>
-<li>Wait for the user to input the level of her/his choice.</li>
-<li>Display a message showing which level is the game being played to the user</li>
-<li>Ask the user to guess a number between (1-10, 1-50 or 1-100, based on the level he is playing)</li>
-<li>If the user guesses a wrong number display &quot;Wrong Guess!&quot;.
+<li>Ask the user to guess a number between (1-10, 1-50 or 1-100, based on the level he/she is playing)</li>
+<li>If the user guesses a wrong number display &quot;Wrong Guess!&quot;!
 <ol>
-<li>Ask the user to guess another number</li>
+<li>Ask the user to guess another number!</li>
 </ol>
 </li>
-<li>if the user guesses a correct number, display &quot;Correct, You won the game!&quot;</li>
+<li>if the user guesses a correct number, display &quot;Correct, You won the game!&quot; and terminate the game!</li>
 </ol>
 <h2 id="solution-8">Solution:</h2>
+<pre><code class="language-dart"><div><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;dart:math&#x27;</span>;
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;../lesson_007/get_user_input.dart&#x27;</span>;
+
+<span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">String</span> chosenLevel = getUserInput(<span class="hljs-string">&#x27;Enter Level (easy, medium, hard&#x27;</span>);
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Your chosen level is: <span class="hljs-subst">$chosenLevel</span>&#x27;</span>);
+  <span class="hljs-keyword">if</span> (chosenLevel == <span class="hljs-string">&#x27;easy&#x27;</span>) {
+    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+      <span class="hljs-built_in">int</span> correctGuess = Random.secure().nextInt(<span class="hljs-number">11</span>);
+      <span class="hljs-built_in">int</span> userInput = getUserInput(<span class="hljs-string">&#x27;Guess a number between 0-10&#x27;</span>);
+      <span class="hljs-keyword">if</span> (correctGuess == userInput) {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Congrats, you the game!&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Shame on you, try again&#x27;</span>);
+      }
+    }
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (chosenLevel == <span class="hljs-string">&#x27;medium&#x27;</span>) {
+    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+      <span class="hljs-built_in">int</span> correctGuess = Random.secure().nextInt(<span class="hljs-number">51</span>);
+      <span class="hljs-built_in">int</span> userInput = getUserInput(<span class="hljs-string">&#x27;Guess a number between 0-50&#x27;</span>);
+      <span class="hljs-keyword">if</span> (correctGuess == userInput) {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Congrats, you the game!&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Shame on you, try again&#x27;</span>);
+      }
+    }
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (chosenLevel == <span class="hljs-string">&#x27;hard&#x27;</span>) {
+    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+      <span class="hljs-built_in">int</span> correctGuess = Random.secure().nextInt(<span class="hljs-number">101</span>);
+      <span class="hljs-built_in">int</span> userInput = getUserInput(<span class="hljs-string">&#x27;Guess a number between 0-100&#x27;</span>);
+      <span class="hljs-keyword">if</span> (correctGuess == userInput) {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Congrats, you the game!&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Shame on you, try again&#x27;</span>);
+      }
+    }
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Level not found&#x27;</span>);
+  }
+}
+</div></code></pre>
 <p><br>
  
 <br>
@@ -623,11 +613,94 @@ level chosen, repectively. Here is step by step explanation.</p>
 </ol>
 </li>
 </ol>
+<h2 id="solution-9">Solution:</h2>
+<pre><code class="language-dart"><div><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;dart:io&#x27;</span>;
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;../lesson_007/get_user_input.dart&#x27;</span>;
+
+<span class="hljs-keyword">void</span> main() {
+  <span class="hljs-comment">// Fetching File</span>
+  <span class="hljs-built_in">String</span> filePath = getUserInput(<span class="hljs-string">&#x27;Enter file path&#x27;</span>);
+  <span class="hljs-built_in">String</span> fileContent = fetchFileContent(filePath);
+  <span class="hljs-keyword">if</span> (fileContent.isEmpty) <span class="hljs-keyword">return</span>;
+  <span class="hljs-built_in">print</span>(fileContent);
+
+  <span class="hljs-comment">/// <span class="markdown">Program</span></span>
+  <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+    <span class="hljs-comment">// Command</span>
+    <span class="hljs-built_in">String</span> command = getUserInput(<span class="hljs-string">&#x27;Enter a command (find, replace, exit)&#x27;</span>);
+    <span class="hljs-keyword">if</span> (command == <span class="hljs-string">&#x27;exit&#x27;</span>) <span class="hljs-keyword">break</span>;
+
+    <span class="hljs-comment">// Find Command:</span>
+    <span class="hljs-keyword">if</span> (command == <span class="hljs-string">&#x27;find&#x27;</span>) {
+      fileContent = fetchFileContent(filePath);
+      <span class="hljs-built_in">String</span> query = getUserInput(<span class="hljs-string">&#x27;What are you searching for&#x27;</span>);
+      <span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">String</span>&gt; words = fileContent.split(<span class="hljs-string">&#x27; &#x27;</span>);
+      words = words.map((element) {
+        <span class="hljs-built_in">String</span> filtered = element.replaceAll(<span class="hljs-string">&#x27;.&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>);
+        filtered = filtered.replaceAll(<span class="hljs-string">&#x27;,&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>);
+
+        <span class="hljs-keyword">return</span> filtered;
+      }).toList();
+      <span class="hljs-keyword">final</span> instanceCount = words.where((e) =&gt; e == query).toList().length;
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;&#x27;&#x27;
+-------------------------------------------------
+Found instance of <span class="hljs-subst">$query</span> is <span class="hljs-subst">$instanceCount</span>.
+      &#x27;&#x27;&#x27;</span>);
+      words =
+          words.map((e) =&gt; e == query ? <span class="hljs-string">&quot;(<span class="hljs-subst">${e.toUpperCase()}</span>)&quot;</span> : e).toList();
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;&#x27;&#x27;
+-------------------------------------------------
+<span class="hljs-subst">${words.join(<span class="hljs-string">&#x27; &#x27;</span>)}</span>
+      &#x27;&#x27;&#x27;</span>);
+    }
+
+    <span class="hljs-comment">// Replace Command:</span>
+    <span class="hljs-keyword">if</span> (command == <span class="hljs-string">&#x27;replace&#x27;</span>) {
+      fileContent = fetchFileContent(filePath);
+
+      <span class="hljs-built_in">String</span> searchWord = getUserInput(<span class="hljs-string">&#x27;What are you searching for&#x27;</span>);
+      <span class="hljs-built_in">print</span>(searchWord);
+      <span class="hljs-built_in">String</span> replace = getUserInput(<span class="hljs-string">&#x27;Enter the replacement&#x27;</span>);
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;&#x27;&#x27;
+
+-------------------------------------------------
+Before: 
+
+<span class="hljs-subst">$fileContent</span>
+-------------------------------------------------
+      &#x27;&#x27;&#x27;</span>);
+      <span class="hljs-keyword">final</span> replacedContent = fileContent.replaceAll(searchWord, replace);
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;&#x27;&#x27;
+
+-------------------------------------------------
+After:
+
+<span class="hljs-subst">$replacedContent</span>
+-------------------------------------------------
+      &#x27;&#x27;&#x27;</span>);
+      File(filePath).writeAsStringSync(replacedContent);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Command not recognized&#x27;</span>);
+    }
+    fileContent = fetchFileContent(filePath);
+  }
+}
+
+<span class="hljs-built_in">String</span> fetchFileContent(<span class="hljs-built_in">String</span> filePath) {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">var</span> content = File(filePath).readAsStringSync();
+    <span class="hljs-keyword">return</span> content;
+  } <span class="hljs-keyword">catch</span> (_) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;</span>;
+  }
+}
+</div></code></pre>
 <h1 id="project-0011-products-catalogue-app"><strong>Project 0011: Products Catalogue App</strong></h1>
 <h3 id="package-name-productsdart">*Package Name: <a href="../lesson_009/products.dart">products.dart</a></h3>
 <h2 id="description-9">Description:</h2>
 <h2 id="steps-8">Steps:</h2>
-<h2 id="solution-9">Solution:</h2>
+<h2 id="solution-10">Solution:</h2>
 <pre><code class="language-dart"><div><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;dart:convert&#x27;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;dart:io&#x27;</span>;
 

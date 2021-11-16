@@ -1,37 +1,16 @@
 <style type="text/css">
   body{
-  font-size: 15pt;
-  /* background-color: #fff;
-  color: #000; */
+  font-size: 14pt;
   line-height: 1.4;
 }
 h1 {
    color: #00b050;
 }
-pre:not(.hljs), pre.hljs code > div {
-    padding: 16px;
-    border-radius: 10px;
-    overflow: auto;
-    /* background-color: #000; */
-}
-code {
-  color: #00b050;
-}
-.hljs-subst, .hljs-function, .hljs-title, .hljs-params, .hljs-formula {
-    color: #45b6fe;
-}
-.vscode-light .hljs-built_in {
-  color: #00b050;
-}
 </style>
-
-
 
 ![Laams Cover Photo](coverphoto.jpg)
 # Tabel of Contents
 - [Tabel of Contents](#tabel-of-contents)
-- [CLI Apps to Be Developed:](#cli-apps-to-be-developed)
-- [App Ideas:](#app-ideas)
 - [**Project 0001: Welcome User App**](#project-0001-welcome-user-app)
     - [*Package Name:* welcome.dart](#package-name-welcomedart)
   - [Description:](#description)
@@ -79,46 +58,15 @@ code {
     - [*Package Name:* finder.dart](#package-name-finderdart)
   - [Description:](#description-8)
   - [Steps:](#steps-7)
+  - [Solution:](#solution-9)
 - [**Project 0011: Products Catalogue App**](#project-0011-products-catalogue-app)
     - [*Package Name: products.dart](#package-name-productsdart)
   - [Description:](#description-9)
   - [Steps:](#steps-8)
-  - [Solution:](#solution-9)
+  - [Solution:](#solution-10)
 
-
 \
 &nbsp;
-\
-&nbsp;
-# CLI Apps to Be Developed:    
-- [x] **Project 0001: Welcome User App**
-- [x] **Project 0002: Student Ranking App**
-- [x] **Project 0003: Get User Input Function**
-- [x] **Project 0004: Simple Calculator App**
-- [x] **Project 0005: User Authentication App**
-- [x] **Project 0006: Average Finder App**
-- [x] **Project 0007: User Info Displayer App**
-- [x] **Project 0008: Multiplication Table App**
-- [ ] **Project 0009: Guessing Game**
-- [ ] **Project 0010: Find and Replace App**
-- [ ] **Project 0011: Products Catalogue App**
-- [ ] **Project 0012: End to End Encyption Messaging App**
-- [ ] Weight, Distance and Temperature Converter
-- [ ] Creating a Stopwatch
-- [ ] Creating a TODO application
-- [ ] Numbers Representation Converter Decimal, Binary, Octal, HexaDecimal
-- [ ] English to Persian Translator,
-- [ ] Pig Latin Game
-- [ ] Sorting a List of numbers
-- [ ] Sorting Alphabet
-- [ ] Creating a chatbot
-\
-&nbsp;
-\
-&nbsp;
-# App Ideas:    
-- [ ] **Text Compersion App**
-- [ ] **Image Compression App**
 \
 &nbsp;
 \
@@ -396,6 +344,7 @@ void main() {
 This app find the average of a student's score. 
 ## Steps:
 ## Solution:
+
 ```dart
 import '../lesson_007/get_user_input.dart';
 
@@ -497,15 +446,59 @@ level chosen, repectively. Here is step by step explanation.
 2. Loop until the user make a level input!
 3. Store the user input in a variable named `chosenLevel` of type `String`!
 4. Display the `chosenLevel` to the user!
-5. Wait for the user to input the level of her/his choice.
-6. Display a message showing which level is the game being played to the user
-7. Ask the user to guess a number between (1-10, 1-50 or 1-100, based on the level he is playing)
-8. If the user guesses a wrong number display "Wrong Guess!".
-   1. Ask the user to guess another number
-9. if the user guesses a correct number, display "Correct, You won the game!"
+5. Ask the user to guess a number between (1-10, 1-50 or 1-100, based on the level he/she is playing)
+6. If the user guesses a wrong number display "Wrong Guess!"!
+   1. Ask the user to guess another number!
+7. if the user guesses a correct number, display "Correct, You won the game!" and terminate the game!
 
 
 ## Solution: 
+```dart 
+import 'dart:math';
+
+import '../lesson_007/get_user_input.dart';
+
+void main() {
+  String chosenLevel = getUserInput('Enter Level (easy, medium, hard');
+  print('Your chosen level is: $chosenLevel');
+  if (chosenLevel == 'easy') {
+    while (true) {
+      int correctGuess = Random.secure().nextInt(11);
+      int userInput = getUserInput('Guess a number between 0-10');
+      if (correctGuess == userInput) {
+        print("Congrats, you the game!");
+        break;
+      } else {
+        print('Shame on you, try again');
+      }
+    }
+  } else if (chosenLevel == 'medium') {
+    while (true) {
+      int correctGuess = Random.secure().nextInt(51);
+      int userInput = getUserInput('Guess a number between 0-50');
+      if (correctGuess == userInput) {
+        print("Congrats, you the game!");
+        break;
+      } else {
+        print('Shame on you, try again');
+      }
+    }
+  } else if (chosenLevel == 'hard') {
+    while (true) {
+      int correctGuess = Random.secure().nextInt(101);
+      int userInput = getUserInput('Guess a number between 0-100');
+      if (correctGuess == userInput) {
+        print("Congrats, you the game!");
+        break;
+      } else {
+        print('Shame on you, try again');
+      }
+    }
+  } else {
+    print('Level not found');
+  }
+}
+```
 
 \
 &nbsp;
@@ -548,6 +541,90 @@ The app loads a loads a text file from memory based on the user's entered `fileP
     8.  Save the changes to the file using [replaced] variable!
     9.  Reload the file each time there is a replacement!
 
+## Solution:
+```dart
+import 'dart:io';
+
+import '../lesson_007/get_user_input.dart';
+
+void main() {
+  // Fetching File
+  String filePath = getUserInput('Enter file path');
+  String fileContent = fetchFileContent(filePath);
+  if (fileContent.isEmpty) return;
+  print(fileContent);
+
+  /// Program
+  while (true) {
+    // Command
+    String command = getUserInput('Enter a command (find, replace, exit)');
+    if (command == 'exit') break;
+
+    // Find Command:
+    if (command == 'find') {
+      fileContent = fetchFileContent(filePath);
+      String query = getUserInput('What are you searching for');
+      List<String> words = fileContent.split(' ');
+      words = words.map((element) {
+        String filtered = element.replaceAll('.', '');
+        filtered = filtered.replaceAll(',', '');
+
+        return filtered;
+      }).toList();
+      final instanceCount = words.where((e) => e == query).toList().length;
+      print('''
+-------------------------------------------------
+Found instance of $query is $instanceCount.
+      ''');
+      words =
+          words.map((e) => e == query ? "(${e.toUpperCase()})" : e).toList();
+      print('''
+-------------------------------------------------
+${words.join(' ')}
+      ''');
+    }
+
+    // Replace Command:
+    if (command == 'replace') {
+      fileContent = fetchFileContent(filePath);
+
+      String searchWord = getUserInput('What are you searching for');
+      print(searchWord);
+      String replace = getUserInput('Enter the replacement');
+      print('''
+
+-------------------------------------------------
+Before: 
+
+$fileContent
+-------------------------------------------------
+      ''');
+      final replacedContent = fileContent.replaceAll(searchWord, replace);
+      print('''
+
+-------------------------------------------------
+After:
+
+$replacedContent
+-------------------------------------------------
+      ''');
+      File(filePath).writeAsStringSync(replacedContent);
+    } else {
+      print('Command not recognized');
+    }
+    fileContent = fetchFileContent(filePath);
+  }
+}
+
+String fetchFileContent(String filePath) {
+  try {
+    var content = File(filePath).readAsStringSync();
+    return content;
+  } catch (_) {
+    return '';
+  }
+}
+```
 
 
 
