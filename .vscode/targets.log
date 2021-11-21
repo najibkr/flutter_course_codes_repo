@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
- 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Nov 15 23:04:31 2021
+# Make data base, printed on Sun Nov 21 09:28:00 2021
 
 # Variables
 
@@ -47,11 +45,11 @@ CURDIR := /home/neo/Archive/Personal/Software/Production/Dart/flutter_course
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code-insiders/866
+SNAP_DATA = /var/snap/code-insiders/869
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:47483
+JOURNAL_STREAM = 8:43913
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -69,23 +67,19 @@ USERNAME = neo
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
-# environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /snap/code-insiders/866/usr/share/code-insiders/code-insiders
+_ = /snap/code-insiders/869/usr/share/code-insiders/code-insiders
 # environment
-MANAGERPID = 1558
+MANAGERPID = 1552
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/neo
 # environment
-GOPROXY = https://proxy.golang.org,direct
-# environment
-GSETTINGS_SCHEMA_DIR = /snap/code-insiders/866/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code-insiders/869/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -93,17 +87,15 @@ PATH = /home/neo/.local/bin:/home/neo/.local/bin:/usr/local/sbin:/usr/local/bin:
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/neopc:@/tmp/.ICE-unix/1784,unix/neopc:/tmp/.ICE-unix/1784
+SESSION_MANAGER = local/neopc:@/tmp/.ICE-unix/1777,unix/neopc:/tmp/.ICE-unix/1777
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/neo/snap/code-insiders/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code-insiders/866
+SNAP = /snap/code-insiders/869
 # environment
-GOPATH = /home/neo/go
-# environment
-SNAP_VERSION = 035eaab2
+SNAP_VERSION = bedf867b
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -113,9 +105,9 @@ DISABLE_WAYLAND = 1
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code-insiders?aid=a04472a4-f4ea-4854-bf12-95bb0f2dd01a&uid=441f2f3f-3182-45cc-a595-e0ad8c725a82&iid=441f2f3f-3182-45cc-a595-e0ad8c725a82&sid=441f2f3f-3182-45cc-a595-e0ad8c725a82","uploadToServer":true}
 # environment
-INVOCATION_ID = 5b16e9d7448b41f18655e88c568baa61
+INVOCATION_ID = 8e6f1c4a6b2b4ed8879418ee2b2dd1f4
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code-insiders/866/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code-insiders/869/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -125,7 +117,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2840
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2251
 # automatic
 %F = $(notdir $%)
 # environment
@@ -139,13 +131,13 @@ PWD = /home/neo/Archive/Personal/Software/Production/Dart/flutter_course
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1741
+SSH_AGENT_PID = 1734
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
-GOMODCACHE = /home/neo/go/pkg/mod
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
 HOME = /home/neo
 # environment
@@ -153,7 +145,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/neo/.config/Code - Insiders/CachedData/035eaab2cb31798c6ae90a35928c62117cb52fcd
+VSCODE_CODE_CACHE_PATH = /home/neo/.config/Code - Insiders/CachedData/bedf867b5b02c1c800fbaf4d6ce09cefbafa1592
 # environment
 LOGNAME = neo
 # environment
@@ -183,19 +175,19 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/neo/snap/code-insiders/866
+SNAP_USER_DATA = /home/neo/snap/code-insiders/869
 # environment
 SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-93a4eef3-e053-45f3-a187-697a3bea5d3e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e34cae99-cad1-4aa6-a316-9fee518fbead.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = neo
 # environment
-SNAP_REVISION = 866
+SNAP_REVISION = 869
 # makefile
 .DEFAULT_GOAL := 
 # environment
@@ -261,9 +253,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2887
+VSCODE_PID = 2297
 # variable set hash-table stats:
-# Load=125/1024=12%, Rehash=0, Collisions=20/147=14%
+# Load=122/1024=12%, Rehash=0, Collisions=19/144=13%
 
 # Pattern-specific Variable Values
 
@@ -271,9 +263,9 @@ VSCODE_PID = 2887
 
 # Directories
 
-# . (device 2053, inode 6560981): 16 files, no impossibilities.
+# . (device 2053, inode 6560981): 19 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -310,10 +302,12 @@ makefile:
 
 # Not a target:
 GNUmakefile:
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
- 
 #  Failed to be updated.
 
 # files hash-table stats:
@@ -324,12 +318,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 237 B / avg = 9 B
-# current buf: size = 8162 B / used = 237 B / count = 24 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 262 B / avg = 9 B
+# current buf: size = 8162 B / used = 262 B / count = 27 / avg = 9 B
 
-# strcache performance: lookups = 27 / hit rate = 11%
+# strcache performance: lookups = 30 / hit rate = 10%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/27=4%
-# Finished Make data base on Mon Nov 15 23:04:31 2021
+# Load=27/8192=0%, Rehash=0, Collisions=2/30=7%
+# Finished Make data base on Sun Nov 21 09:28:00 2021
 
  
