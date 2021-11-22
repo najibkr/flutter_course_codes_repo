@@ -3,6 +3,10 @@ import 'dart:math';
 import '../lesson_007/get_user_input.dart';
 
 void main() {
+  runGuessingGame();
+}
+
+void runGuessingGame() {
   String chosenLevel = getUserInput('Enter Level (easy, medium, hard');
   print('Your chosen level is: $chosenLevel');
   if (chosenLevel == 'easy') {
