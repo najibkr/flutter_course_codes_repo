@@ -1,0 +1,1 @@
+[{name: Afghanistan, population: 350000000, cities: [Herat, Kabul], GDP: 25000000000000.0}, {name: Pakistan, population: 350000000, cities: [Islamabad, Lahore], GDP: 25000000000000.0}, {name: Iran, population: 350000000, cities: [Mashhad, Tehran], GDP: 25000000000000.0}]
