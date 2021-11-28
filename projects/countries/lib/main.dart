@@ -1,5 +1,5 @@
 void main() async {
-  final myFuture = await fechData('Najib');
+  final _ = await fechData('Najib');
 }
 
 // void main() {

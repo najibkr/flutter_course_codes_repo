@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import '../lesson_007/get_user_input.dart';
-
 void main() {
   final countries = File('countries.json').readAsStringSync();
   final json = List<Map<String, dynamic>>.from(jsonDecode(countries));
