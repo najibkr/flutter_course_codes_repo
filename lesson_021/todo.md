@@ -1,6 +1,12 @@
+<style type="text/css"> 
+body {
+   font-size: 20pt;
+}
+</style>
+
 # Part I: Create A TODO Application
 
-1. Create a file named todos.json
+1. Create a file named **todos.json**
 2. Inside it add three todo objects inside a list with the following details
    1. **id**: A numeric or String random ID
    2. **todoType**: could be either (personal, work, school). 
