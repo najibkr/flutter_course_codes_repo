@@ -3,5 +3,7 @@ import 'class_creator.dart';
 void main() {
   var creator = ClassCreator();
   creator.create();
-  // JsonSerializer.printSample();
+
+  final list = [1, 333];
+  list.firstWhere((element) => false);
 }

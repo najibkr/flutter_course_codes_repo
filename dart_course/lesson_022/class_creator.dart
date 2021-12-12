@@ -90,9 +90,11 @@ class ClassCreator {
   }
 
   String get constructorToString {
-    String constr = '';
-    for (var constractor in constructors) constr += constractor.toString();
-    return constr;
+    var buffer = StringBuffer();
+    for (var constractor in constructors) {
+      buffer.write(constractor.toString());
+    }
+    return buffer.toString();
   }
 
   String get gettersToString {
