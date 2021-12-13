@@ -29,17 +29,19 @@ class Variable {
     );
   }
 
+  String get _genNullPrefix {
+    return isNullable ? '?' : "";
+  }
+
   String define() {
-    final nullPrefix = isNullable ? '?' : '';
     final keyWord = isImmutable ? 'final ' : '';
     final defValue = value.isEmpty ? '' : "=$value";
-    return '$keyWord $dataType$nullPrefix $name $defValue;';
+    return '$keyWord $dataType${_genNullPrefix} $name $defValue;';
   }
 
   String declare() {
-    final nullPrefix = isNullable ? '?' : '';
     final keyWord = isImmutable ? 'final' : '';
-    return '$keyWord $dataType$nullPrefix $name;';
+    return '$keyWord $dataType${_genNullPrefix} $name;';
   }
 
   String toStatic() {
