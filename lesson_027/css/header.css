@@ -14,10 +14,13 @@
 .header__title {
     font-size: 4rem;
     text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
 }
 
 .header__subtitle {
     font-size: 2rem;
     padding: 0.5rem 1rem;
     background-color: rgba(255, 0, 0, 0.8);
+    text-align: center;
 }

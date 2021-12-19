@@ -26,3 +26,9 @@
 body {
     columns: var(--textColorNormal);
 }
+
+@media only screen and (max-width: 490px) {
+    :root {
+        font-size: 8px;
+    }
+}

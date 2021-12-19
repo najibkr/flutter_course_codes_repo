@@ -43,3 +43,16 @@
     font-size: 1.2rem;
 
 }
+
+@media only screen and (max-width: 490px) {
+    .newsfeed__article {
+        width: 80vw;
+        margin: 0.8rem;
+        text-align: center;
+    }
+
+    .newsfeed__article img {
+        width: 80vw;
+        height: 25rem;
+    }
+}
