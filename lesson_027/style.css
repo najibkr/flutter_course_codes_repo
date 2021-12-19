@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+:root {
+    --primaryColor: #b02900;
+    --primaryColorDark: #4b1010;
+    --primaryColorLight: #ec6767;
+    font-size: 10px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "APPBAR APPBAR APPBAR"
+        "STARTSIDEBAR MAIN ENDSIDEBAR"
+        "FOOTER FOOTER FOOTER";
+    grid-template-columns: minmax(200px, 1fr) 3fr minmax(200px, 1fr);
+    grid-template-rows: 70px auto 250px;
+    align-items: stretch;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+}
+
+.navbar {
+    grid-area: APPBAR;
+    background-color:var(--primaryColor);
+}
+
+.start-sidebar {
+    grid-area: STARTSIDEBAR;
+    background-color: purple;
+}
+
+
+.end-sidebar {
+    grid-area: ENDSIDEBAR;
+    background-color: teal;
+}
+
+.main {
+    grid-area: MAIN;
+    background-color: bisque;
+}
+
+.footer {
+    grid-area: FOOTER;
+
+    background-color: var(--primaryColorLight);
+}
+
+
+.articles {
+    display: flex;
+}
+
+
+.main__section-title{
+    color: var(--primaryColorDark);
+}
+.newsfeed {
+    background-color: white;
+}
+
+
+.navbar__button {
+ 
+    font-size: 2rem;
+    transition: all;
+    transition-duration: 3s;
+
+
+
+}
+.navbar__button:hover {
+    display: inline-block;
+    transform: scale(2);
+    color: white;
+    transition: all;
+    transition-duration: 3s;
+}
+
+image {
+    height: 200px;
+}
+
+img:hover {
+    transform: scale(2);
+    transition: all;
+    transition-duration: 5s;
+}
