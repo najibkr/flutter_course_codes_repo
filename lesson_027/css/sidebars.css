@@ -1,0 +1,70 @@
+.start-sidebar, .end-sidebar {
+  background-color: var(--drawerColor);
+  padding: 1.5rem;
+}
+
+.start-sidebar__header {
+  margin: 1rem;
+  text-align: center;
+}
+
+.start-sidebar__image {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 20rem;
+  margin: 1rem;
+  box-shadow: 0rem 0rem 0.8rem var(--shadowColor);
+}
+
+
+
+.sub-form__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: var(--primaryColor);
+}
+
+.sub-form__label {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  columns: var(--textColorNormal);
+}
+
+.sub-form__input {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0.4rem 0rem;
+  width: 22rem;
+  border-radius: .5rem;
+
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  justify-content: stretch;
+}
+
+.sub-form__input[placeholder] {
+  font-size: 1.6rem;
+  color: var(--primaryColorLight);
+}
+
+.sub-form__input--btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--primaryColor);
+  color: var(--textColorForeground);
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.sub-form__input--btn:active {
+  transform: scale(0.95);
+  transition: all 200ms ease;
+}

@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    background-color: var(--primaryColor);
+    color: var(--textColorForeground);
+    align-items: center;
+    padding: 0.8rem 2rem;
+    align-content: stretch;
+}
+
+.navbar__logo {
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+.navbar__btns {
+    flex: 3;
+    justify-content: end;
+    display: flex;
+}
+
+.navbar__btn {
+    display: inline-block;
+    margin: 0rem 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.navbar__btn:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    transition: all 0.25s ease-out;
+}
+
+.navbar__btn:active {
+    transform: scale(1);
+    font-weight: bold;
+    color: var(--selectColor);
+    transition: all 0.25s ease-out;
+
+}
+
+.navbar__btn--auth {
+    background-color: var(--buttonColor);
+    border-radius: 0.8rem;
+    padding: 0.6rem 2rem;
+
+}

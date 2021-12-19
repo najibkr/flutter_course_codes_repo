@@ -1,0 +1,45 @@
+.newsfeed {
+    padding: 2rem 0rem;
+    background-color: var(--backgroundColor);
+}
+
+
+.newsfeed--dark {
+    padding: 2rem 0rem;
+    background-color: rgb(58, 8, 8);
+    color: var(--textColorForeground);
+}
+
+.newsfeed__title {
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: var(--primaryColor);
+}
+
+.newsfeed__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.newsfeed__article {
+    width: 23rem;
+    margin: 0.8rem;
+    text-align: center;
+}
+
+.newsfeed__article img {
+    width: 23rem;
+    height: 12rem;
+}
+
+.newsfeed__article h1 {
+    padding: .8rem 0rem;
+    font-size: 1.6rem;
+
+}
+
+.newsfeed__article p {
+    font-size: 1.2rem;
+
+}

@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background: url('../assets/image02.webp') rgba(255, 0, 0, 0.5);
+    background-blend-mode: saturation;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColorForeground);
+}
+
+.header__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 0, 0, 0.8);
+}

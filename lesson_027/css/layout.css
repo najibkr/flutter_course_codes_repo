@@ -1,0 +1,79 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+        "APPBAR APPBAR APPBAR"
+        "STARTSIDEBAR HEADER ENDSIDEBAR"
+        "STARTSIDEBAR MAIN ENDSIDEBAR"
+        "FOOTER FOOTER FOOTER";
+    grid-template-columns: minmax(25rem, 1fr) 3fr minmax(25rem, 1fr);
+    grid-template-rows: 6rem 32rem minmax(100vh, auto) 25rem;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.navbar {
+    grid-area: APPBAR;
+}
+
+.start-sidebar {
+    grid-area: STARTSIDEBAR;
+}
+
+
+.end-sidebar {
+    grid-area: ENDSIDEBAR;
+}
+
+.header {
+    grid-area: HEADER;
+}
+
+.main {
+    grid-area: MAIN;
+}
+
+.footer {
+    grid-area: FOOTER;
+}
+
+@media only screen and (max-width: 490px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "APPBAR"
+            "HEADER"
+            "MAIN"
+            "FOOTER";
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 32rem minmax(100vh, auto) 25rem;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .navbar {
+        grid-area: APPBAR;
+    }
+
+    .start-sidebar {
+        display: none;
+    }
+
+
+    .end-sidebar {
+        display: none;
+    }
+
+    .header {
+        grid-area: HEADER;
+    }
+
+    .main {
+        grid-area: MAIN;
+    }
+
+    .footer {
+        grid-area: FOOTER;
+    }
+}

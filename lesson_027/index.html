@@ -12,68 +12,134 @@
 
         <!-- Nav Bar -->
         <nav class="navbar">
-            <p class="navbar__title">This is the appbar</p>
-            <a class="navbar__button">Home</a>
-            <a class="navbar__button">About</a>
-            <a class="navbar__button navbar__button--signout">Signout</a>
+            <h1 class="navbar__logo">BBC News</h1>
+            <div class="navbar_btns">
+                <div class="navbar__btn">Home</div>
+                <div class="navbar__btn">Contact</div>
+                <div class="navbar__btn">About</div>
+                <div class="navbar__btn navbar__btn--auth">Signin</div>
+            </div>
         </nav>
 
         <!-- Start Side Bar -->
         <aside class="start-sidebar">
-            <!-- <p>This is the Start SideBar</p> -->
+            <div class="start-sidebar__header">
+                <img class="start-sidebar__image" width="150px" src="assets/image03.jpeg">
+                <h1 class="start-sidebar__title">Charliz Theron</h1>
+                <p class="start-sidebar__bio">Sexiest Woman Alive</p>
+            </div>
         </aside>
 
         <!-- Start Side Bar -->
         <aside class="end-sidebar">
+            <form class="sub-form">
+                <h3 class="sub-form__title">Subscribe Now</h3>
+                <!-- <label class="sub-form__label" for="name">Full Name:</label> -->
+                <input class="sub-form__input" type="text" name="name" placeholder="Your Name">
+                <!-- <label class="sub-form__label" type="email" for="email">Email:</label> -->
+                <input class="sub-form__input" name="email" placeholder="Enter Email">
+                <input class="sub-form__input sub-form__input--btn" type="submit" value="Subscribe" name="subscribe">
+            </form>
         </aside>
+
+        <!-- Page Header -->
+        <header class="header">
+            <h1 class="header__title">Welcome to BBC News</h1>
+            <h3 class="header__subtitle">This is the place where you learn everything</h3>
+        </header>
+
 
         <!-- Main Section -->
         <main class="main">
-            <header>
-                <h1 class="main__title">This is the Header</h1>
-            </header>
+            <section class="newsfeed">
+                <h1 class="newsfeed__title">World News:</h1>
+                <div class="newsfeed__articles">
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
+                    </article>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
+                    </article>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-            <!-- Sections -->
-            <section class="main__newsfeed main__newsfeed--light">
-                <h1 class="main__section-title">Worlds News</h1>
-                <div class="main__articles">
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+            <!-- Asia News -->
+            <section class="newsfeed newsfeed--dark">
+                <h1 class="newsfeed__title">Asia News:</h1>
+                <div class="newsfeed__articles">
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
                 </div>
             </section>
 
 
-            <!-- Section 2 -->
-            <section class="main__newsfeed main__newsfeed--dark">
-                <h1 class="main__section-title">Worlds News</h1>
-                <div class="main__articles">
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+            <!-- Sports News -->
+            <section class="newsfeed">
+                <h1 class="newsfeed__title">Sports News:</h1>
+                <div class="newsfeed__articles">
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
-                    <article class="main__article">
-                        <img src="image01.JPG" alt="image" width="250px">
-                        <h1>I am the Title</h1>
-                        <p>This is the summary of the article</p>
+                    <article class="newsfeed__article">
+                        <img src="assets/image01.png">
+                        <h1>Someone Was Killed!</h1>
+                        <p>
+                            This is was really awkward when someone was killed by someone else and that someone else was
+                            killed by someone else.
+                        </p>
                     </article>
                 </div>
             </section>
@@ -81,7 +147,8 @@
 
         <!-- Footer  -->
         <footer class="footer">
-            <p class="footer__title">This is the footer</p>
+            <h1 class="footer__title">Copyright &copy; Laams LLC</h1>
+            <address>Barchi, Kabul, Afghanistan</address>
         </footer>
     </div>
 </body>
