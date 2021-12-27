@@ -21,6 +21,6 @@
 .header__subtitle {
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: var(--primaryColor);
     text-align: center;
 }
