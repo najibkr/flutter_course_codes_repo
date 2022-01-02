@@ -1,9 +1,9 @@
-import 'package:amazon/components/end_side_bar.dart';
-import 'package:amazon/components/side_bar.dart';
+import 'package:amazon/count_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 
-import 'components/app_bar.dart';
-import 'lists/stories_list.dart';
+import 'count_reactive_bloc.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,46 +11,26 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomPage(),
+    return BlocProvider(
+      create: (context) => CountBloc(),
+      child: const MaterialApp(home: HomePage()),
     );
   }
 }
 
-class HomPage extends StatelessWidget {
-  const HomPage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final bloc = context.watch<CountBloc>();
     return Scaffold(
-      appBar: buildAppBar(),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SideBar(),
-          Expanded(
-            flex: 3,
-            child: CustomScrollView(slivers: [
-              StoriesList(),
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (BuildContext context, int index) {
-                    return Container(
-                      height: 350,
-                      margin: EdgeInsets.all(10),
-                      color: Colors.pink[100],
-                    );
-                  },
-                ),
-              ),
-            ]),
-          ),
-          EndSideBar(),
-        ],
+      body: Center(child: Text(bloc.state.toString())),
+      floatingActionButton: FloatingActionButton(
+        onPressed: context.read<CountBloc>().increment,
       ),
     );
   }

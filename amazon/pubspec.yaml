@@ -30,6 +30,11 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.4
+  http: ^0.13.4
+  shelf_router: ^1.1.2
+  provider: ^6.0.2
+  rxdart: ^0.27.3
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:
