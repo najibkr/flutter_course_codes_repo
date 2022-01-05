@@ -1,36 +1,36 @@
-import 'package:amazon/count_bloc.dart';
+import 'package:amazon/bloc/user_bloc.dart';
+import 'package:amazon/data/data_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import 'count_reactive_bloc.dart';
+import 'app_router.dart';
+import 'bloc/user_state.dart';
+import 'repo/app_repository.dart';
 
-void main() {
-  runApp(const MainApp());
+void main() async {
+  final SharedPreferences prefs = await SharedPreferences.getInstance();
+  runApp(MainAppSetup(prefs: prefs));
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
+class MainAppSetup extends StatelessWidget {
+  final SharedPreferences prefs;
+  const MainAppSetup({Key? key, required this.prefs}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final repo = AppRepository(DataProvider(prefs));
     return BlocProvider(
-      create: (context) => CountBloc(),
-      child: const MaterialApp(home: HomePage()),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final bloc = context.watch<CountBloc>();
-    return Scaffold(
-      body: Center(child: Text(bloc.state.toString())),
-      floatingActionButton: FloatingActionButton(
-        onPressed: context.read<CountBloc>().increment,
+      create: (context) => UserBloc(repo),
+      child: BlocBuilder<UserBloc, UserState>(
+        builder: (context, state) {
+          final isSignedIn = state.currentUser.isSignedIn;
+          return MaterialApp(
+            theme: ThemeData.dark(),
+            initialRoute: '/',
+            onGenerateRoute: (settings) => appRouter(settings, isSignedIn),
+          );
+        },
       ),
     );
   }
